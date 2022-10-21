@@ -18,7 +18,10 @@ public class Utility {
             );
             path = newscan.nextLine();
             Path folder = Paths.get(path);
-            System.out.println(folder);
+            System.out.println("Given path of files : " + folder);
+            if(!Files.exists(folder)) {
+                throw new Exception();
+            }
         }
         catch(Exception ex) {
             System.out.println(ex);

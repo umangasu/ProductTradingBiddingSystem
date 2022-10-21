@@ -14,9 +14,9 @@ public class PbtsFacade {
         selectedProduct = scan.nextLine();
         // pattern implemented (Bridge implementation and Factory implementation
         if (selectedProduct.equalsIgnoreCase("1")) {
-            selectCourse(new MeatProductMenu(), userType);
+            selectProduct(new MeatProductMenu(), userType);
         } else if (selectedProduct.equalsIgnoreCase("2")) {
-            selectCourse(new ProduceProductMenu(), userType);
+            selectProduct(new ProduceProductMenu(), userType);
         } else {
             System.out.println("Wrong Selection");
             System.exit(-1);
@@ -28,17 +28,19 @@ public class PbtsFacade {
         Iterator iterate = (Iterator) products.createIterator();
         ProductIterator productIterator = new ProductIterator();
         TradingList tradings = new TradingList();
+        System.out.println("Tradings by product .....");
         while (productIterator.HasNext(iterate)) {
-            System.out.println(productIterator.Next(iterate));
+            String productName = productIterator.Next(iterate);
+            System.out.println(productName + ":");
             Iterator iterate2 = (Iterator) tradings.createIterator();
             TradingIterator tradingIterator = new TradingIterator();
-            while (tradingIterator.HasNext(iterate)) {
+            while (tradingIterator.HasNext(iterate2)) {
                 String[] singleTradingInfo = tradingIterator.Next(iterate2).split(":");
-                if(productIterator.Next(iterate).equalsIgnoreCase(singleTradingInfo[1])) {
+                if(productName.equalsIgnoreCase(singleTradingInfo[1])) {
                     System.out.println(singleTradingInfo[0] + " traded " + singleTradingInfo[1]);
                 }
             }
-
+            System.out.println("\n");
         }
         scan.close();
     }
@@ -47,27 +49,6 @@ public class PbtsFacade {
         return object.login();
     }
 
-
-//    public void addTrading(AssignmentMenu AM) {
-//        AM.AddAssignment();
-//    }
-//
-//    public void viewTrading(AssignmentMenu VM) {
-//        VM.ViewAssignment();
-//    }
-//
-//    public void viewOffering(SolutionMenu SM) {
-//        SM.gradeSolution();
-//    }
-//
-//    public void markOffering(SolutionMenu SM) {
-//        SM.reportSolution();
-//    }
-//
-//    public void submitOffering(SolutionMenu SM) {
-//        SM.submitSolution();
-//    }
-
     public void remind() {
         ReminderVisitor remind = new ReminderVisitor();
         ProductList productList = new ProductList();
@@ -75,7 +56,7 @@ public class PbtsFacade {
 
     }
 
-    public void selectCourse(ProductMenu productMenu, int UserType) {
+    public void selectProduct(ProductMenu productMenu, int UserType) {
         productMenu.selectProduct(UserType);
     }
 

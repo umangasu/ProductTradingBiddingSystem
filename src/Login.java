@@ -26,11 +26,11 @@ public class Login {
         String sellerFile = Utility.getFolderName() + "/SellerInfo.txt";
         if(validateUser(username, password, buyerFile)) {
             userType = 0;
-            System.out.println("Welcome Buyer...");
+            System.out.println("Welcome Buyer " + username);
         }
         else if (validateUser(username, password, sellerFile)) {
             userType = 1;
-            System.out.println("Welcome Seller...");
+            System.out.println("Welcome Seller " + username);
         }
         else {
             userType = -1;
