@@ -26,7 +26,7 @@ public class MeatProductMenu extends ProductMenu {
 
     @Override
     public void selectProduct(int userType) {
-        System.out.println("Meat Products Selected ...\n Bridge Pattern for connection used");
+        System.out.println("Meat Products Selected ...\nBridge Pattern for connection used");
         Person person;
         if (userType == 0) {
             person = PersonFactory.createObject("Buyer");

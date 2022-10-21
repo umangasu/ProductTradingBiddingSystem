@@ -27,12 +27,18 @@ public class PbtsFacade {
         ProductList products = new ProductList();
         Iterator iterate = (Iterator) products.createIterator();
         ProductIterator productIterator = new ProductIterator();
-        OfferingList offerings = new OfferingList();
-        Iterator iterate2 = (Iterator) offerings.createIterator();
-        OfferingIterator offeringIterator = new OfferingIterator();
+        TradingList tradings = new TradingList();
         while (productIterator.HasNext(iterate)) {
             System.out.println(productIterator.Next(iterate));
-            System.out.println(offeringIterator.Next(iterate2));
+            Iterator iterate2 = (Iterator) tradings.createIterator();
+            TradingIterator tradingIterator = new TradingIterator();
+            while (tradingIterator.HasNext(iterate)) {
+                String[] singleTradingInfo = tradingIterator.Next(iterate2).split(":");
+                if(productIterator.Next(iterate).equalsIgnoreCase(singleTradingInfo[1])) {
+                    System.out.println(singleTradingInfo[0] + " traded " + singleTradingInfo[1]);
+                }
+            }
+
         }
         scan.close();
     }
@@ -68,19 +74,6 @@ public class PbtsFacade {
         productList.accept(remind);
 
     }
-
-//    public void createUser(UserInfoItem userinfoitem) {
-//        userinfoitem.createUSer();
-//    }
-//
-//    public void createProductList(CourseMenu CM) {
-//        CM.createCourseList();
-//    }
-//
-//    public void attachProductToUser(CourseMenu CM) {
-//        CM.AttachCourseToUser();
-//
-//    }
 
     public void selectCourse(ProductMenu productMenu, int UserType) {
         productMenu.selectProduct(UserType);

@@ -20,9 +20,7 @@ public class PersonFactory extends Person{
         System.out.println("Factory Pattern Intiated for user creation....");
         if (str.equalsIgnoreCase("Buyer")) {
             person = new Buyer();
-        } else
-
-        {
+        } else {
             person = new Seller();
         }
         return person;
