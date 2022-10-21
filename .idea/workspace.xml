@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bbecbed-4a83-437b-ac21-26e3b0099ffc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ListIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MeatProductMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NodeVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OfferingIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OfferingList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PBTSMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PbtsFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProduceProductMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProductIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProductList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProductMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reminder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ReminderVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Trading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPattern.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductTradingBiddingSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PBTSMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PBTSMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PbtsFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PbtsFacade.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,14 +33,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="PBTSMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PBTSMain" />
@@ -91,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665955312448</updated>
       <workItem from="1665955313805" duration="6770000" />
-      <workItem from="1666223069054" duration="18235000" />
+      <workItem from="1666223069054" duration="34862000" />
     </task>
     <servers />
   </component>

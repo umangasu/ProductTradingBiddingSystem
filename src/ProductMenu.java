@@ -10,18 +10,18 @@ public abstract class ProductMenu {
 
     public abstract void ShowLabels();
 
-    public abstract void selectCourse(int userType);
+    public abstract void selectProduct(int userType);
 
-    public void createCourseList() {
-        System.out.println("Course List created ...");
+    public void createProductList() {
+        System.out.println("Product List created ...");
     }
 
-    public void AttachCourseToUser() {
+    public void attachProductToUser() {
         System.out.println("User Attached .... ");
     }
 
-    public void courseOperation() {
-        System.out.println("Operation performed on the course...");
+    public void productOperation() {
+        System.out.println("Operation performed on the product...");
     }
 
 }

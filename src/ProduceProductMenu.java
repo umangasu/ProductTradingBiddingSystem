@@ -25,7 +25,7 @@ public class ProduceProductMenu extends ProductMenu {
     }
 
     @Override
-    public void selectCourse(int userType) {
+    public void selectProduct(int userType) {
 
     }
 }
